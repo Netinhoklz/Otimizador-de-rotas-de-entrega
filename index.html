@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adicionar Endereços de Entrega</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f5ff;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #1565c0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #1565c0;
+        }
+        input[type="text"] {
+            width: calc(100% - 10px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #1565c0;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0d47a1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adicionar Endereços de Entrega</h1>
+    <form method="POST">
+        <div id="addresses">
+            <div class="address">
+                <label for="address">Ponto de partida:</label>
+                <input type="text" name="address">
+            </div>
+        </div>
+        <div id="preco">
+            <div class="preco_gasolina">
+                <label for="preco_gasolina">Preço da gasolina hoje:</label>
+                <input type="text" name="preco_gasolina">
+            </div>
+        </div>
+        <button type="button" onclick="addAddress()">Adicionar Endereço</button>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        function addAddress() {
+            var div = document.createElement('div');
+            div.innerHTML = '<label for="address">Endereço de Entrega:</label><input type="text" name="address">';
+            document.getElementById('addresses').appendChild(div);
+        }
+    </script>
+</body>
+</html>

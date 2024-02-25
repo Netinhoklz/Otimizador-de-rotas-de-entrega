@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Endereços de Entrega</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f5ff;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #1565c0;
+            text-align: center;
+            margin-top: 20px;
+        }11111111111111111111111111111111111111111111111111111111111111111111111111111111
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            width: 50%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ol {
+        padding: 0;
+        margin: 0 auto;
+        width: 50%;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ordem de Endereços de Entrega</h1>
+    <ol>
+        {% for address in addresses %}
+            <li>{{ address }}</li>
+        {% endfor %}
+    </ol>
+
+    <h1>Sobre a rota</h1>
+    <ul>
+        <li>Distância total: {{distancia}}km</li>
+        <li>Tempo estimado: {{tempo_rota}} </li>
+        <li>Litros de gasolina(Carro): {{l_carro}}L</li>
+        <li>Custo de gasolina(Carro): R${{c_carro}}</li>
+        <li>Litros de gasolina(Moto): {{l_moto}}L</li>
+        <li>Custo de gasolina(Moto): R${{c_moto}}</li>
+    </ul>
+
+</body>
+</html>
