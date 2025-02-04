@@ -29,7 +29,7 @@ def show_addresses():
     print(preco_str)
     preco = float(preco_str[0].replace(',','.'))
     # Chave api conetando
-    gmaps = googlemaps.Client(key="AIzaSyCgTAuVhrG8_rvx_EatnNYYuz2_QBgaqYc")
+    gmaps = googlemaps.Client(key="COLOQUE_AQUI_SUA_CHAVE_API_DO_GOOGLE")
 
     # Passando por todos os nomes
     lista_locais = addresses
