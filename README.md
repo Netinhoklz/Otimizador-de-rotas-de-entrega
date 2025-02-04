@@ -45,4 +45,4 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
 ## 👤 Autor
 
-Seu Nome - [@seu-usuario](https://github.com/seu-usuario)
+José Neto - [Linkedin]([https://github.com/seu-usuario](https://www.linkedin.com/in/jos%C3%A9-freitas-alves-neto-907877285/))
